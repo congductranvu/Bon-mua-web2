@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nhân vật Xuân – Câu chuyện bốn mùa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Mulish:wght@700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+	  #loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #e0f7fa;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fadeOut 1s ease-out 4s forwards;
+}
+.wind-container {
+  display: flex;
+  gap: 1.5rem;
+}
+.wind {
+  font-size: 2.5rem;
+  animation: swirl 3s infinite linear;
+}
+@keyframes swirl {
+  0% { transform: rotate(0deg) scale(1); opacity: 1; }
+  50% { transform: rotate(180deg) scale(1.2); opacity: 0.7; }
+  100% { transform: rotate(360deg) scale(1); opacity: 1; }
+}
+@keyframes fadeOut {
+  to { opacity: 0; visibility: hidden; }
+}
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: #fff9f9;
+      color: #2D1B2D;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+        url("Img Logo/xuan-bg.png");
+      background-repeat: repeat;
+      background-size: 300px;
+      background-position: center;
+    }
+    h1, h2, h3 {
+      font-family: 'Mulish', sans-serif;
+    }
+    .highlight {
+      color: #C24563;
+    }
+    .section-soft {
+      background-color: rgba(235, 211, 217, 0.9);
+      margin-top: 12rem;
+      padding-bottom: 6rem;
+    }
+    .hero-bg {
+      background: linear-gradient(to right, #C24563, #A1344A);
+    }
+    .bg-overlay {
+      padding: 4rem 1.5rem;
+    }
+  </style>
+</head>
+<body>
+	<!-- Loading Animation -->
+<div id="loader">
+  <div class="wind-container">
+    <div class="wind">☀️</div>
+    <div class="wind">🍂</div>
+    <div class="wind">❄️</div>
+    <div class="wind">🌸</div>
+  </div>
+  <h2 class="text-2xl font-bold mt-6 text-[#3c9b81]">Câu chuyện bốn mùa</h2>
+</div>
+
+  <!-- Header -->
+  <header class="hero-bg text-white py-4 px-6 shadow-md sticky top-0 z-50 border-b-4 border-[#F58A9D]">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-extrabold tracking-wider drop-shadow-xl uppercase">
+        <a href="index.html.html" class="hover:underline">Câu chuyện bốn mùa</a>
+      </h1>
+      <nav class="space-x-6 text-base font-bold drop-shadow">
+        <a href="index.html.html" class="hover:underline">Trang chủ</a>
+        <a href="index.html.html" class="hover:underline">Nhân vật</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Giới thiệu nhân vật Xuân -->
+  <section>
+    <div class="bg-overlay max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-start">
+      <div>
+        <img src="Img Logo/poster Xuân.png" alt="Nhân vật Xuân" class="rounded-xl shadow-md">
+      </div>
+      <div>
+        <h2 class="text-5xl font-bold highlight mb-6">Xuân – Sự Khởi Đầu Mới</h2>
+        <p class="text-xl text-gray-800 leading-relaxed">
+          Xuân là hiện thân của sự khởi đầu, sức sống trỗi dậy và hy vọng. Với màu sắc chủ đạo là hồng đào và xanh lá non, nhân vật này mang nét trẻ trung, mềm mại nhưng không kém phần tươi tắn. Khuôn mặt biểu cảm dịu dàng, kết hợp với trang phục lấy cảm hứng từ áo dài truyền thống, gợi nhắc đến vẻ đẹp mùa xuân Việt Nam.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ý tưởng & cảm hứng thiết kế -->
+  <section class="py-20 px-6 section-soft">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-bold text-[#A1344A] mb-6">Ý tưởng & Cảm hứng thiết kế</h3>
+      <p class="text-[#2D1B2D] text-lg leading-relaxed">
+        Nhân vật Xuân được xây dựng dựa trên hình ảnh mùa xuân miền Bắc Việt Nam, với những yếu tố như hoa đào, mưa phùn và lễ hội Tết cổ truyền. Thiết kế trang phục cách điệu từ áo dài cách tân, kết hợp họa tiết hoa văn dân gian. Tính cách Xuân đại diện cho sự tươi sáng, hướng thiện, là nhân vật mở đầu hành trình “Câu chuyện bốn mùa”.
+      </p>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-[#A1344A] text-white py-2 text-center text-sm">
+    © 2025 Trần Vũ Công Đức – Đồ án tốt nghiệp Trường Đại học Thủ Dầu Một
+  </footer>
+	<script>
+  setTimeout(() => {
+    document.getElementById('loader').style.display = 'none';
+  }, 1000); // 5 giây
+</script>
+</body>
+</html>

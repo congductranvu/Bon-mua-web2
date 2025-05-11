@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Câu chuyện bốn mùa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Mulish:wght@700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom, #f7f8f9, #e3f2ef);
+      color: #333;
+    }
+    h1.logo-font {
+      font-family: 'Mulish', sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    section {
+      transition: all 0.3s ease-in-out;
+    }
+    .fade-in {
+      animation: fadeInUp 1s ease-out;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+	  #loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #e0f7fa;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fadeOut 1s ease-out 4s forwards;
+}
+.wind-container {
+  display: flex;
+  gap: 1.5rem;
+}
+.wind {
+  font-size: 2.5rem;
+  animation: swirl 3s infinite linear;
+}
+@keyframes swirl {
+  0% { transform: rotate(0deg) scale(1); opacity: 1; }
+  50% { transform: rotate(180deg) scale(1.2); opacity: 0.7; }
+  100% { transform: rotate(360deg) scale(1); opacity: 1; }
+}
+@keyframes fadeOut {
+  to { opacity: 0; visibility: hidden; }
+}
+  </style>
+</head>
+<body>
+	<div id="loader">
+  <div class="wind-container">
+    <div class="wind">☀️</div>
+    <div class="wind">🍂</div>
+    <div class="wind">❄️</div>
+    <div class="wind">🌸</div>
+  </div>
+  <h2 class="text-2xl font-bold mt-6 text-[#3c9b81]">Câu chuyện bốn mùa</h2>
+</div>
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-3xl text-[#3c9b81] font-bold logo-font">Câu chuyện bốn mùa</h1>
+      <nav class="space-x-6 text-sm font-medium">
+        <a href="index.html.html" class="hover:text-[#f94144]">Trang chủ</a>
+        <a href="#characters" class="hover:text-[#f94144]">Nhân vật</a>
+        <a href="#branding" class="hover:text-[#f94144]">Bộ nhận diện</a>
+        <a href="#contact" class="hover:text-[#f94144]">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url" ("Img Logo/nen.png");>
+    <div class="bg-white bg-opacity-70 p-10 rounded-xl shadow-xl fade-in">
+      <h2 class="text-5xl font-extrabold text-[#3c9b81] mb-4">Hành trình của bốn mùa</h2>
+      <p class="text-lg text-gray-700 max-w-2xl mx-auto">Khám phá nhóm nhân vật được thiết kế trong dự án Thiết kế nhân vật 3D “Câu chuyện bốn mùa” – hòa quyện giữa văn hóa Việt và sáng tạo hiện đại.</p>
+    </div>
+  </section>
+
+  <!-- Characters Section -->
+ <section id="characters" class="py-20 bg-green-100">
+  <div class="max-w-6xl mx-auto text-center">
+    <h3 class="text-4xl font-bold text-[#3c9b81] mb-10">Nhân vật đại diện bốn mùa</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+  <div class="bg-pink-100 rounded-xl p-6 shadow hover:shadow-lg transition">
+    <a href="xuan_chinh_sua.html"><img src="Img Logo/1x/Artboard 2.png" alt="Xuân" class="w-full h-48 object-cover rounded-md mb-4"></a>
+    <h4 class="text-xl font-bold text-[#f94144]">Xuân</h4>
+    <p class="text-gray-600">Tươi mới, nhẹ nhàng, đầy sức sống như hoa nở đầu năm.</p>
+  </div>
+  <div class="bg-yellow-100 rounded-xl p-6 shadow hover:shadow-lg transition">
+    <a href="ha_chinh_sua.html"><img src="Img Logo/1x/Artboard 3.png" alt="Hạ" class="w-full h-48 object-cover rounded-md mb-4"></a>
+    <h4 class="text-xl font-bold text-[#f9844a]">Hạ</h4>
+    <p class="text-gray-600">Rực rỡ, năng động và mạnh mẽ như ánh mặt trời giữa hè.</p>
+  </div>
+  <div class="bg-red-200 rounded-xl p-6 shadow hover:shadow-lg transition">
+    <a href="thu_chinh_sua.html"><img src="Img Logo/1x/Artboard 4.png" alt="Thu" class="w-full h-48 object-cover rounded-md mb-4"></a>
+    <h4 class="text-xl font-bold text-[#f9c74f]">Thu</h4>
+    <p class="text-gray-600">Trầm lắng, lãng mạn và dịu dàng như làn gió se lạnh.</p>
+  </div>
+  <div class="bg-blue-100 rounded-xl p-6 shadow hover:shadow-lg transition">
+    <a href="dong_chinh_sua.html"><img src="Img Logo/1x/Artboard 1.png" alt="Đông" class="w-full h-48 object-cover rounded-md mb-4"></a>
+    <h4 class="text-xl font-bold text-[#90be6d]">Đông</h4>
+    <p class="text-gray-600">Lạnh lùng, bí ẩn nhưng cuốn hút như tuyết trắng mùa đông.</p>
+  </div>
+</div>
+</div>
+  </div>
+</section>
+
+  <!-- Branding Section -->
+  <section id="branding" class="py-20 bg-pink-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-bold text-[#3c9b81] mb-8">Bộ nhận diện thương hiệu</h3>
+      <p class="text-gray-700 mb-6">Dự án sử dụng màu sắc và hình ảnh đặc trưng cho bốn mùa: hồng đào – Xuân, cam rực – Hạ, nâu đất – Thu, và xanh lam – Đông. Font chính: Quicksand & Mulish.</p>
+      <img src="Img Logo/Artboard 1.png" alt="Banner" class="mx-auto rounded-full">
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-20 bg-gray-200">
+    <div class="max-w-3xl mx-auto text-center">
+      <h3 class="text-2xl font-semibold text-[#f94144] mb-4">Khám phá thêm</h3>
+      <p class="text-gray-700 mb-6">Bạn muốn xem toàn bộ hệ sinh thái thương hiệu từ “Câu chuyện bốn mùa”? Khám phá các thiết kế chi tiết trong phần Bộ Nhận Diện!</p>
+      <a href="BoNhanDien_4Mua_Final.html" class="bg-[#f94144] text-white py-3 px-6 rounded-full font-semibold hover:bg-[#e63946] transition">Xem Bộ Nhận Diện</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#3c3c3c] text-gray-700 py-6 text-center text-sm">
+    © 2025 Trần Vũ Công Đức – Đồ án tốt nghiệp Trường Đại học Thủ Dầu Một
+  </footer>
+	<script>
+  setTimeout(() => {
+    document.getElementById('loader').style.display = 'none';
+  }, 2000); // 5 giây
+</script>
+</body>
+</html>
